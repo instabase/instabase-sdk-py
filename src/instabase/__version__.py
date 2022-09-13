@@ -10,7 +10,7 @@
 
 __title__ = "instabase_sdk"
 __description__ = "SDK to access Instabase Apps."
-__url__ = "https://apps.instabase.com"
+__url__ = "https://github.com/instabase/instabase-sdk-py"
 __version__ = "0.0.2"
 __author__ = "Mohit Chawla"
 __author_email__ = "sdk@instabase.com"
