@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling","requests","validators"]
+build-backend = "hatchling.build"
+
+[project]
+name = "instabase"
+version = "0.0.2"
+authors = [
+  { name="Mohit Chawla", email="sdk@instabase.com" },
+]
+description = "SDK to access Instabase Apps"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.6"
+dependencies = [
+  'requests',
+  'validators'
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/instabase/instabase-sdk-py"
+"Bug Tracker" = "https://github.com/instabase/instabase-sdk-py/issues"
