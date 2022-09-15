@@ -13,13 +13,13 @@ You will need to set the following environment variables:
 Example below demonstrates usage of the SDK to extract contents of an image using Instabase's Bank Statements application (version 3.0.0):
 
 ```
-from instabase import SDK
+from instabase.apps import Client
 
 app_name, app_version = 'US Bank Statements', '3.0.0'
-file_url = 'https://apps.instabase.com/static/assets/images/cloud-developers/us-bs/sample-us-bs-1.jpeg'
+file_url = '<INPUT FILE URL HERE>'
 
-sdk = SDK()
-resp = sdk.extract_from_input_url(file_url, app_name, app_version)
+client = Client()
+resp = client.extract_from_input_url(file_url, app_name, app_version)
 print(resp)
 ```
 

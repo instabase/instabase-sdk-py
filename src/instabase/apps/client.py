@@ -10,10 +10,10 @@ from .enums import KEY_API_TOKEN, KEY_ROOT_URL
 from ._utils import get_env_var, build_headers
 
 
-class SDK:
+class Client:
 
     def __init__(self):
-        """Initialize the SDK using environment config."""
+        """Initialize the Client using environment config."""
         self.token = get_env_var(KEY_API_TOKEN)
         self.root_url = get_env_var(KEY_ROOT_URL)
 
