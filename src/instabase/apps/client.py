@@ -19,7 +19,7 @@ class Client:
 
 
     def _build_run_url(self, version='v1'):
-        return urllib.parse.urljoin(self.root_url,'api/')+version+'/solution/run_developers_portal'
+        return urllib.parse.urljoin(self.root_url,'api/')+version+'/cloud/app/run'
 
 
     def extract_from_input_bytes(self, bytes_content, file_name, app_name, app_version):
