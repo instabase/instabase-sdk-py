@@ -45,10 +45,6 @@ class Client:
                 'input_file_name':
                 file_name,
                 'name': app_name,
-                'settings': {
-                    'output_has_run_id': True,
-                    'use_flow_batch_mode': True
-                },
                 'version': app_version
             }))
 
