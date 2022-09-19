@@ -33,6 +33,6 @@ from instabase.apps import Client
 
 app_name, app_version = 'US Bank Statements', '3.0.0'
 with open(<FILE_PATH_HERE>,'rb') as f:
-		resp = client.extract_from_input_bytes(f.read(), <FILE_NAME>, app_name, app_version)
-		print(resp)
+	resp = client.extract_from_input_bytes(f.read(), <FILE_NAME>, app_name, app_version)
+	print(resp)
 ```
