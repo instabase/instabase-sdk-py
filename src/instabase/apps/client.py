@@ -10,16 +10,16 @@ from .enums import KEY_API_TOKEN, KEY_ROOT_URL
 from ._utils import get_env_var, build_headers
 
 
-class SDK:
+class Client:
 
     def __init__(self):
-        """Initialize the SDK using environment config."""
+        """Initialize the Client using environment config."""
         self.token = get_env_var(KEY_API_TOKEN)
         self.root_url = get_env_var(KEY_ROOT_URL)
 
 
     def _build_run_url(self, version='v1'):
-        return urllib.parse.urljoin(self.root_url,'api/')+version+'/solution/run_developers_portal'
+        return urllib.parse.urljoin(self.root_url,'api/')+version+'/cloud/app/run'
 
 
     def extract_from_input_bytes(self, bytes_content, file_name, app_name, app_version):
@@ -45,10 +45,6 @@ class SDK:
                 'input_file_name':
                 file_name,
                 'name': app_name,
-                'settings': {
-                    'output_has_run_id': True,
-                    'use_flow_batch_mode': True
-                },
                 'version': app_version
             }))
 

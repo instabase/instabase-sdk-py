@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "instabase"
-version = "0.0.2"
+version = "0.0.3"
 authors = [
   { name="Mohit Chawla", email="sdk@instabase.com" },
 ]
@@ -13,6 +13,7 @@ readme = "README.md"
 license = { file="LICENSE" }
 requires-python = ">=3.6"
 dependencies = [
+  'pytest',
   'requests',
   'validators'
 ]
